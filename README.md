@@ -10,7 +10,7 @@ The third objective is to practice our usage of **Docker**. All the components o
 
 ## General instructions
 
-* This is a **BIG** lab and you will need a lot of time to complete it. 
+* This is a **BIG** lab and you will need a lot of time to complete it.
 * We have prepared webcasts for a big portion of the lab (**what can get you the "base" grade of 4.5**).
 * Be aware that the webcasts have been recorded in 2016. There is no change in the list of tasks to be done, but of course **there are some differences in the details**. For instance, the Docker images that we use to implement the solution have changed a bit and you will need to do **some adjustments to the scripts**. This is part of the work and we ask you to document what the required adaptations in your report.
 * The webcasts present one solution. Feeling adventurous and want to propose another one (for instance, by using nginx instead apache httpd, or django instead of express.js)? Go ahead, we **LOVE** that. Make sure to document your choices in the report. If you are not sure if your choice is compatible with the list of acceptance criteria? Not sure about what needs to be done to get the extra points? Reach out to the teaching team. **Learning to discuss requirements with a "customer"** (even if this one pays you with a grade and not with money) is part of the process!
@@ -21,7 +21,6 @@ The third objective is to practice our usage of **Docker**. All the components o
 * **You have to write a report. Please do that directly in the repo, in one or more markdown files. Start in the README.md file at the root of your directory.**
 * The report must contain the procedure that you have followed to prove that your configuration is correct (what you would do if you were doing a demo).
 * Check out the **due dates** on the main repo for the course.
-
 
 ## Step 1: Static HTTP server with apache httpd
 
@@ -54,7 +53,6 @@ The third objective is to practice our usage of **Docker**. All the components o
 * You don't have to use express.js; if you want, you can use another JavaScript web framework or event another language.
 * You have **documented** your configuration in your report.
 
-
 ## Step 3: Reverse proxy with apache (static configuration)
 
 ### Webcasts
@@ -63,15 +61,13 @@ The third objective is to practice our usage of **Docker**. All the components o
 * [Labo HTTP (3b): reverse proxy apache httpd dans Docker](https://www.youtube.com/watch?v=fkPwHyQUiVs)
 * [Labo HTTP (3c): reverse proxy apache httpd dans Docker](https://www.youtube.com/watch?v=UmiYS_ObJxY)
 
-
 ### Acceptance criteria
 
 * You have a GitHub repo with everything needed to build the Docker image for the container.
 * You can do a demo, where you start from an "empty" Docker environment (no container running) and where you start 3 containers: static server, dynamic server and reverse proxy; in the demo, you prove that the routing is done correctly by the reverse proxy.
-* You can explain and prove that the static and dynamic servers cannot be reached directly (reverse proxy is a single entry point in the infra). 
+* You can explain and prove that the static and dynamic servers cannot be reached directly (reverse proxy is a single entry point in the infra).
 * You are able to explain why the static configuration is fragile and needs to be improved.
 * You have **documented** your configuration in your report.
-
 
 ## Step 4: AJAX requests with JQuery
 
@@ -110,8 +106,8 @@ The third objective is to practice our usage of **Docker**. All the components o
 
 ### Load balancing: multiple server nodes (0.5pt)
 
-* You extend the reverse proxy configuration to support **load balancing**. 
-* You show that you can have **multiple static server nodes** and **multiple dynamic server nodes**. 
+* You extend the reverse proxy configuration to support **load balancing**.
+* You show that you can have **multiple static server nodes** and **multiple dynamic server nodes**.
 * You prove that the **load balancer** can distribute HTTP requests between these nodes.
 * You have **documented** your configuration and your validation procedure in your report.
 
