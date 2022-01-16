@@ -5,19 +5,24 @@
 - [Step 2: Dynamic HTTP server with express.js](#step-2-dynamic-http-server-with-expressjs)
   - [Table of contents](#table-of-contents)
   - [How to use](#how-to-use)
+  - [Configuration doc](#configuration-doc)
   - [Original instruction](#original-instruction)
     - [Webcasts](#webcasts)
     - [Acceptance criteria](#acceptance-criteria)
 
 ## How to use
 
-
-
 In order to use this app you need to have docker running on your computer. Than you need a terminal open with the this directory as the working directory. You will than run this command (The parts between \[square brackets\] are for you to fill in and the parts in {curly brackets} are optional) :  
-`docker build -t [IMAGE NAME] .`  
+`docker build -t [IMAGE NAME] .` **Be carful: the dot at the end is important**  
 You than need to run this command :  
 `docker run {--name [CONTAINER NAME]} -d -p [PORT]:3000 [IMAGE NAME]`  
-This runs the container is the background on the chose port and eventually gives it a meaningful name if you chose to. Now you only need to connect to `localhost:[PORT]` and you will be connected to your dynamic HTTP server
+This runs the container is the background on the chosen port and eventually gives it a meaningful name if you chose to. Now you only need to connect to `localhost:[PORT]` and you will be connected to your dynamic HTTP server
+
+## Configuration doc
+
+In the src file we have a javascript file that when prompted will return a JSON file as well as .json files with the packages needed in order to run the javascript file.
+
+The Dockerfile simply makes sure this src file is at the right place of a node app and that the packages are installed.
 
 ## Original instruction
 

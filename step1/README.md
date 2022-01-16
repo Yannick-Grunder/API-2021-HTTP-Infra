@@ -5,6 +5,7 @@
 - [Step 1: Static HTTP server with apache httpd](#step-1-static-http-server-with-apache-httpd)
   - [Table of contents](#table-of-contents)
   - [How to use](#how-to-use)
+  - [Configuration doc](#configuration-doc)
   - [Original instruction](#original-instruction)
     - [Webcasts](#webcasts)
     - [Acceptance criteria](#acceptance-criteria)
@@ -15,7 +16,11 @@ In order to use this app you need to have docker running on your computer. Than 
 `docker build -t [IMAGE NAME] .`  
 You than need to run this command :  
 `docker run {--name [CONTAINER NAME]} -d -p [PORT]:80 [IMAGE NAME]`  
-This runs the container is the background on the chose port and eventually gives it a meaningful name if you chose to. Now you only need to connect to `localhost:[PORT]` and you will be connected to your static HTTP server
+This runs the container is the background on the chosen port and eventually gives it a meaningful name if you chose to. Now you only need to connect to `localhost:[PORT]` and you will be connected to your static HTTP server
+
+## Configuration doc
+
+We have a content file which is just a static example internet page found for free on the internet. The Dockerfile simply copies the content file at the right place of an Apache app in order to access it.
 
 ## Original instruction
 
