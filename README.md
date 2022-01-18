@@ -31,7 +31,12 @@
 ## Navigation
 
 Every Step has a README in it's file with a report
-[Step 1](step1)
+
+- [Step 1](step1)
+- [Step 2](step2)
+- [Step 3](step3)
+- [Step 4](step4)
+- [Step 5](step5)
 
 ## Original instruction
 
