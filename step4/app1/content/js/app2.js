@@ -1,6 +1,6 @@
 $(function(){
     function loadJSON() {
-        $getJSON(/*"/api/step2/"*/ "localhost:3000", function(generateRandomJSON) {
+        $.getJSON("/api/step2/", function(generateRandomJSON) {
             console.log(generateRandomJSON);
             $(".app2_container").text(generateRandomJSON[0].about);
         });
