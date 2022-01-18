@@ -9,7 +9,7 @@
 
 ## How to use
 
-In order to use this app you need to have docker running on your computer. No container mus be running.  Than you need to start the container from Step 1 and than the one from Step 2 without piping the ports:  
+In order to use this app you need to have docker running on your computer. No container must be running. Than you need to start the container from Step 1 and than the one from Step 2 without piping the ports:  
 `docker run {--name [CONTAINER NAME]} -d [IMAGE NAME]`  
 Than you need a terminal open with the this directory as the working directory. You will than run this command (The parts between \[square brackets\] are for you to fill in and the parts in {curly brackets} are optional) :  
 `docker build -t [IMAGE NAME] .` **Be carful: the dot at the end is important**  

@@ -13,7 +13,8 @@ You need to follow the instructions of step 3 but with the files in this folder 
 
 ## Configuration doc
 
-The Dockerfiles have been modified to include vim to the machines.
+The Dockerfiles have been modified to include vim to the machines.  
+The first app has been modified to run a script on a timer that changes on of it's parts every 5 seconds to a part of the random output from the second app.
 
 ## Original instruction
 
