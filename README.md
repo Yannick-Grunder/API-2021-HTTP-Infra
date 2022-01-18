@@ -4,6 +4,7 @@
 
 - [Labo HTTP Infra](#labo-http-infra)
   - [Table of contents](#table-of-contents)
+  - [Navigation](#navigation)
   - [Original instruction](#original-instruction)
     - [General instructions](#general-instructions)
     - [Step 1: Static HTTP server with apache httpd](#step-1-static-http-server-with-apache-httpd)
@@ -26,6 +27,11 @@
       - [Load balancing: round-robin vs sticky sessions (0.5 pt)](#load-balancing-round-robin-vs-sticky-sessions-05-pt)
       - [Dynamic cluster management (0.5 pt)](#dynamic-cluster-management-05-pt)
       - [Management UI (0.5 pt)](#management-ui-05-pt)
+
+## Navigation
+
+Every Step has a README in it's file with a report
+[Step 1](step1)
 
 ## Original instruction
 
