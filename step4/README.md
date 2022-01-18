@@ -1,11 +1,4 @@
-# Step 3: Reverse proxy with apache (static configuration)
-
-- [Step 3: Reverse proxy with apache (static configuration)](#step-3-reverse-proxy-with-apache-static-configuration)
-  - [How to use](#how-to-use)
-  - [Configuration doc](#configuration-doc)
-  - [Original instruction](#original-instruction)
-    - [Webcasts](#webcasts)
-    - [Acceptance criteria](#acceptance-criteria)
+# Step 4: AJAX requests with JQuery
 
 ## How to use
 
@@ -30,14 +23,12 @@ The Dockerfile simply makes sure that the proxys are at the right place and laun
 
 ### Webcasts
 
-- [Labo HTTP (3a): reverse proxy apache httpd dans Docker](https://www.youtube.com/watch?v=WHFlWdcvZtk)
-- [Labo HTTP (3b): reverse proxy apache httpd dans Docker](https://www.youtube.com/watch?v=fkPwHyQUiVs)
-- [Labo HTTP (3c): reverse proxy apache httpd dans Docker](https://www.youtube.com/watch?v=UmiYS_ObJxY)
+- [Labo HTTP (4): AJAX avec JQuery](https://www.youtube.com/watch?v=fgpNEbgdm5k)
 
 ### Acceptance criteria
 
-- You have a GitHub repo with everything needed to build the Docker image for the container.
-- You can do a demo, where you start from an "empty" Docker environment (no container running) and where you start 3 containers: static server, dynamic server and reverse proxy; in the demo, you prove that the routing is done correctly by the reverse proxy.
-- You can explain and prove that the static and dynamic servers cannot be reached directly (reverse proxy is a single entry point in the infra).
-- You are able to explain why the static configuration is fragile and needs to be improved.
+- You have a GitHub repo with everything needed to build the various images.
+- You can do a complete, end-to-end demonstration: the web page is dynamically updated every few seconds (with the data coming from the dynamic backend).
+- You are able to prove that AJAX requests are sent by the browser and you can show the content of th responses.
+- You are able to explain why your demo would not work without a reverse proxy (because of a security restriction).
 - You have **documented** your configuration in your report.
