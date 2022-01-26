@@ -19,13 +19,13 @@ make sure to write them down somewhere.
 Than you need a terminal open with the this directory as the working directory. You will than run this command (The parts between \[square brackets\] are for you to fill in and the parts in {curly brackets} are optional) :  
 `docker build -t [IMAGE NAME] .` **Be carful: the dot at the end is important**  
 You than need to run this command :  
-`docker run {--name [CONTAINER NAME]} -d -p [PORT]:80 -e STATIC_APP=[STEP 1 CONTAINER IP] -e DYNAMIC_APP=[STEP 2 CONTAINER IP][IMAGE NAME]`  
+`docker run {--name [CONTAINER NAME]} -d -p [PORT]:80 -e STATIC_APP=[STEP 1 CONTAINER IP]:80 -e DYNAMIC_APP=[STEP 2 CONTAINER IP]:3000 [IMAGE NAME]`  
 This runs the container is the background on the chosen port and eventually gives it a meaningful name if you chose to.
 
 To be able to access the app you need to specify a host of `demo.api.ch` and you can this host to your computer in order to use the app in a browser. This is found in the `/etc/hosts` file (`C:\Windows\System32\drivers\etc\hosts` on Windows). You simply need to add, at the end of the file and using admin rights, this line:  
 `[the ip to your Docker machine (it was 10.0.0.4 on my Windows machine)] demo.api.ch`
 
-Once this is done you can access the apps with the URLs `http://demo.api.ch:8080` and `http://demo.api.ch:8080/api/step2/` for the first and second app respectively.
+Once this is done you can access the apps with the URLs `http://demo.api.ch:[PORT]` and `http://demo.api.ch:[PORT]/api/step2/` for the first and second app respectively.
 
 ## Configuration doc
 

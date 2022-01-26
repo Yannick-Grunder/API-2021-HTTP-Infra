@@ -13,7 +13,7 @@
 ## How to use
 
 In order to use this app you need to have docker running on your computer. Than you need a terminal open with the this directory as the working directory. You will than run this command (The parts between \[square brackets\] are for you to fill in and the parts in {curly brackets} are optional) :  
-`docker build -t [IMAGE NAME] .`  
+`docker build -t [IMAGE NAME] .` **Be carful: the dot at the end is important**  
 You than need to run this command :  
 `docker run {--name [CONTAINER NAME]} -d -p [PORT]:80 [IMAGE NAME]`  
 This runs the container is the background on the chosen port and eventually gives it a meaningful name if you chose to. Now you only need to connect to `localhost:[PORT]` and you will be connected to your static HTTP server
