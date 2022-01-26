@@ -9,7 +9,7 @@
 
 ## How to use
 
-In order to use this app you need to have docker running on your computer.   Than you need to start the container from Step 1 and Step 2 without piping the ports:  
+In order to use this app you need to have docker running on your computer. Than you need to start the containers app1 and app2 from Step 4 (be sure they are built):  
 `docker run --name [CONTAINER NAME] -d [IMAGE NAME]`  
 You can do this any number of times just be sure to name the one you want to use.  
 You now need to find the IP adresse of these containers using:  
@@ -23,7 +23,7 @@ You than need to run this command :
 This runs the container is the background on the chosen port and eventually gives it a meaningful name if you chose to.
 
 To be able to access the app you need to specify a host of `demo.api.ch` and you can this host to your computer in order to use the app in a browser. This is found in the `/etc/hosts` file (`C:\Windows\System32\drivers\etc\hosts` on Windows). You simply need to add, at the end of the file and using admin rights, this line:  
-`[the ip to your Docker machine (it was 10.0.0.4 on my Windows machine)] demo.api.ch`
+`[the ip to your Docker machine (it was localhost or 127.0.0.1 on my Windows machine)] demo.api.ch`
 
 Once this is done you can access the apps with the URLs `http://demo.api.ch:[PORT]` and `http://demo.api.ch:[PORT]/api/step2/` for the first and second app respectively.
 
